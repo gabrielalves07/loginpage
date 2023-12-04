@@ -29,85 +29,99 @@ p {
 /* Boas vindas - topo do formulário*/
 
 .welcome{
-    width: 360px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .welcome h1{
     color: #222226;
-    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 22px;
 }
 
 .welcome>div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .welcome>div>p{
     font-weight: bold;
     color: black;
-    font-size: 22px;
+    font-size: 19px;
     margin: 0;
 }
 
 .welcome>div>img{
-    width: 40px;
+    width: 37px;
 }
 
-/* imputs, lembrar senha e criar conta */
-
-.ccgoogle{
+.metodos{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ccgoogle, .ccface{
+    display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: center;
+    width: 49%;
+    height: 45px;
     border: 1px rgb(202, 202, 202) solid;
     border-radius: 3px;
     padding: 5px 0;
 }
 
-.ccgoogle:hover{
+.ccgoogle:hover, .ccface:hover{
     text-decoration: none;
     box-shadow: 0 0 1px var(--primary);
 }
 
-.ccgoogle p{
+.ccgoogle p, .ccface p{
     margin: 0;
     color: rgb(139 139 139);
 }
 
-.ccgoogle>div>img{
-    width: 28px;
-    margin-right: 5px;
+.ccgoogle>div>img, .ccface>div>img{
+    width: 25px;
+    margin-right: 3px;
 }
 
-#section{
+/* imputs, lembrar senha e criar conta */
+
+.section{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     background-color: #fff;
     max-width: 900px;
-    height: 85%;
+    height: 88%;
     border-radius: 8px;
     box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.13);
+    padding: 55px 50px 30px 50px;
 }
 
-form#form{
-    width: 360px;
+form{
+    width: 100%;
 }
 
-div#section>#campologin{
+div.section>.campologin{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 40px;
+    justify-content: space-around;
+    height: 100%;
 }
 
 form>button.btn-purple{
     background-color: var(--secondary);
+    height: 40px;
     color: #fff;
 }
 
@@ -116,53 +130,36 @@ form>button.btn-purple:hover{
     transition-duration: 0.3s;
 }
 
-.email{
+.email, .pass, .nome{
     display: flex;
     flex-direction: row;
     align-items: center;
+    border: 1px rgb(202, 202, 202) solid;
+    border-radius: 3px;
+    height: 40px;
 }
 
-.iconemail{
+.iconemail, .iconpass, .iconnome{
     display: flex;
     align-items: center;
-    border: 1px lightgray solid;
-    border-right: 0;
-    border-radius: 3px 0 0 3px;
-    padding: 7px 9px;
+    padding: 7px 0 7px 14px;
 }
 
-.iconemail>i{
+.iconemail>i, .iconpass>i, .iconnome>i{
     font-size: 19px;
     color: rgb(134, 134, 134);
 }
 
 .form-control{
     height: 35px;
+    border: none;
+
 }
 
 .form-control:focus {
-    border-color: var(--secondary);
-    box-shadow: 0 0 2px var(--secondary);
-}
-
-.pass{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.iconpass{
-    display: flex;
-    align-items: center;
-    border: 1px lightgray solid;
-    border-right: 0;
-    border-radius: 3px 0 0 3px;
-    padding: 7px 9px;
-}
-
-.iconpass>i{
-    font-size: 19px;
-    color: rgb(134, 134, 134);
+    border:none;
+    outline: none;
+    box-shadow: none;
 }
 
 .form-check{
@@ -170,7 +167,7 @@ form>button.btn-purple:hover{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 15px 0 20px 0;
+    margin: 15px 0 20px 5px;
 }
 
 .form-check-label{
@@ -202,4 +199,18 @@ form>button.btn-purple:hover{
     text-decoration: none;
     color: #4a2697;
     transition-duration: 0.3s;
+}
+
+/* ------------- campo cadastro ---------------*/
+
+div.section>.campocadastro{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.btn-purple{
+    margin: 25px 0;
 }

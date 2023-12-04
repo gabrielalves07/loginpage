@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@media screen and (max-width: 504px){
+    .section{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .section{
+        padding: 60px 40px;
+    }
+
+    .welcome h1 {
+        font-size: 20px;
+    }
+
+    .welcome p {
+        font-size: 14px;
+    }
+
+    .welcome>div{
+        margin-bottom: 40px;
+    }
+}
