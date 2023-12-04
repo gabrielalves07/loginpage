@@ -30,7 +30,6 @@ p {
 
 .welcome{
     width: 100%;
-    margin-bottom: 15px;
 }
 
 .welcome h1{
@@ -44,7 +43,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
 }
 
 .welcome>div>p{
@@ -122,6 +121,7 @@ div.section>.campologin{
 form>button.btn-purple{
     background-color: var(--secondary);
     height: 40px;
+    margin: 10px 0;
     color: #fff;
 }
 
@@ -139,6 +139,10 @@ form>button.btn-purple:hover{
     height: 40px;
 }
 
+.email input:focus + div{
+    color: var(--secondary);
+}
+
 .iconemail, .iconpass, .iconnome{
     display: flex;
     align-items: center;
@@ -153,7 +157,6 @@ form>button.btn-purple:hover{
 .form-control{
     height: 35px;
     border: none;
-
 }
 
 .form-control:focus {
@@ -186,7 +189,7 @@ form>button.btn-purple:hover{
 
 .ntconta{
     font-size: 14px;
-    margin-top: 25px;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -211,6 +214,11 @@ div.section>.campocadastro{
     height: 100%;
 }
 
-.btn-purple{
-    margin: 25px 0;
+/* ------------ errors ------------- */
+
+label.error{
+    display: block;
+    margin-bottom: 14px;
+    font-size: 11px;
+    color: rgb(255, 54, 54);
 }

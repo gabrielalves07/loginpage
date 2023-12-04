@@ -35,20 +35,20 @@
                 </a>
             </div>
 
-            <p style="text-align: center; margin: 14px 0; font-size: 12px;">ou continue com email</p>
+            <p style="text-align: center; margin: 10px 0; font-size: 12px;">ou continue com email</p>
 
-            <form class="form">
+            <form id="formlogin">
                 <div class="input-group mb-3 email">
                     <div class="iconemail">
                         <i class="material-icons">email</i>
                     </div>
-                    <input type="email" autocomplete="off" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                    <input type="email" name="emailLogin" autocomplete="off" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required>
                 </div>
                 <div class="input-group mb-3 pass">
                     <div class="iconpass">
                         <i class="material-icons">lock</i>
                     </div>
-                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                    <input type="password"  name="passLogin" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required>
                 </div>
                 <div class="form-group form-check">
                     <div>
@@ -58,7 +58,7 @@
                     <a href="#" class="esqueceusenha">Esqueceu a senha?</a>
                 </div>
                 <button type="submit" class="btn btn-block btn-purple">Fazer login</button>
-                <p class="ntconta">Não tem uma conta? <a href="#">Crie uma conta</a></p>
+                <p class="ntconta">Não tem uma conta? <a href="#" class="paracadastro">Crie uma conta</a></p>
               </form>
         </div>
         <!-- CAMPO DE CADASTRO DE USUÁRIOS -->
@@ -89,33 +89,34 @@
 
             <p style="text-align: center; margin: 14px 0; font-size: 12px;">ou continue com email</p>
 
-            <form class="form">
+            <form id="formcadastro">
                 <div class="input-group mb-3 nome">
                     <div class="iconnome">
                         <i class="material-icons">person</i>
                     </div>
-                    <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1">
+                    <input type="text" name="nome" class="form-control" placeholder="Nome" aria-describedby="basic-addon1" required>
                 </div>
                 <div class="input-group mb-3 email">
                     <div class="iconemail">
                         <i class="material-icons">email</i>
                     </div>
-                    <input type="email" autocomplete="off" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                    <input type="email" name="emailCadastro" autocomplete="off" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required>
                 </div>
                 <div class="input-group mb-3 pass">
                     <div class="iconpass">
                         <i class="material-icons">lock</i>
                     </div>
-                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                    <input type="password"  name="passCadastro" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required>
                 </div>
                 <button type="submit" class="btn btn-block btn-purple">Fazer cadastro</button>
-                <p class="ntconta">Já tem uma conta? <a href="#">Faça login</a></p>
+                <p class="ntconta">Já tem uma conta? <a href="#" class="paralogin">Faça login</a></p>
               </form>
         </div>
     </div>
 
     @push('script')
-    <script src="../resources/js/signin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="../resources/js/main.js"></script>
     @endpush
 
 @endsection
