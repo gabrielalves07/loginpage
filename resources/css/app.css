@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: arial, verdana, helvetica, sans-serif;
+    font-size: 14px;
+}
+
+:root{
+    --primary: rgb(139 139 139);
+    --secondary: #6A4EA6;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(233, 233, 233, 0.925);
+}
+
+p {
+    color: var(--primary);
+}
+
+/* Boas vindas - topo do formulário*/
+
+.welcome{
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.welcome h1{
+    color: #222226;
+    font-size: 26px;
+}
+
+.welcome>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.welcome>div>p{
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+    margin: 0;
+}
+
+.welcome>div>img{
+    width: 40px;
+}
+
+/* imputs, lembrar senha e criar conta */
+
+.ccgoogle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px rgb(202, 202, 202) solid;
+    border-radius: 3px;
+    padding: 5px 0;
+}
+
+.ccgoogle:hover{
+    text-decoration: none;
+    box-shadow: 0 0 1px var(--primary);
+}
+
+.ccgoogle p{
+    margin: 0;
+    color: rgb(139 139 139);
+}
+
+.ccgoogle>div>img{
+    width: 28px;
+    margin-right: 5px;
+}
+
+#section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #fff;
+    max-width: 900px;
+    height: 85%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.13);
+}
+
+form#form{
+    width: 360px;
+}
+
+div#section>#campologin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+form>button.btn-purple{
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+form>button.btn-purple:hover{
+    background-color: #6242a7;
+    transition-duration: 0.3s;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconemail{
+    display: flex;
+    align-items: center;
+    border: 1px lightgray solid;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    padding: 7px 9px;
+}
+
+.iconemail>i{
+    font-size: 19px;
+    color: rgb(134, 134, 134);
+}
+
+.form-control{
+    height: 35px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 2px var(--secondary);
+}
+
+.pass{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconpass{
+    display: flex;
+    align-items: center;
+    border: 1px lightgray solid;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    padding: 7px 9px;
+}
+
+.iconpass>i{
+    font-size: 19px;
+    color: rgb(134, 134, 134);
+}
+
+.form-check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0 20px 0;
+}
+
+.form-check-label{
+    color: var(--primary);
+}
+
+.esqueceusenha{
+    color: var(--secondary);
+}
+
+.esqueceusenha:hover{
+    text-decoration: none;
+    color: #4a2697;
+    transition-duration: 0.3s;
+}
+
+.ntconta{
+    font-size: 14px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.ntconta>a{
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.ntconta>a:hover{
+    text-decoration: none;
+    color: #4a2697;
+    transition-duration: 0.3s;
+}
