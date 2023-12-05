@@ -26,24 +26,24 @@ btnParaLogin.addEventListener('click', (e) => {
 
 $("#formlogin").validate({
     rules: {
-        emailLogin: {
+        login: {
             required: true,
             email: true,
         },
 
-        passLogin: {
+        password: {
             required: true,
             minlength: 8,
         }
     },
 
     messages: {
-        emailLogin:{
+        email:{
             required: "Preencha este campo.",
             email: "Preencha com um email válido."
         },
 
-        passLogin: {
+        password: {
             required: "Preencha este campo.",
             minlength: jQuery.validator.format("este campo deve ter 8 ou mais caracteres."),
         },
