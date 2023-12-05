@@ -14,11 +14,11 @@ class LoginController extends Controller
             'password' => ['required'],
         ]);
 
-        if(Auth::attempt($credenciais)) {
+        if(Auth::attempt($credenciais, $request->remember)) {
             $request->session()->regenerate();
             return redirect()->intended('/admin/conteudo');
         } else {
-            return redirect()->back()->with('erro', 'Usuário ou senha inválidos');
+            return redirect()->back()->withErrors('Usuário ou senha inválidos');
         }
     }
 
@@ -28,4 +28,5 @@ class LoginController extends Controller
         $request->session()->regenerateToken();
         return redirect(route('login.form'));
     }
+
 }

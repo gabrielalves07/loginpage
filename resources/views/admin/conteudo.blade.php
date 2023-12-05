@@ -3,6 +3,8 @@
 @section('titulo', 'conteudo')
 
 @section('conteudo')
+
+</div>
     <ul class="nav nav-tabs justify-content-end" style="background-color: #6A4EA6; padding: 3px;">
         <li class="nav-item">
             <a class="nav-link disabled" href="#" style="color: #fff;">{{ auth()->user()->name }}</a>

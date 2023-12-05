@@ -41,7 +41,7 @@
         </div>
         <div class="form-group form-check">
             <div>
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <input type="checkbox"  name="remember" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">me lembre</label>
             </div>
             <a href="#" class="esqueceusenha">Esqueceu a senha?</a>

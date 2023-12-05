@@ -22,11 +22,12 @@ btnParaLogin.addEventListener('click', (e) => {
     $('#formcadastro').validate().resetForm();
 });
 
+
 // validação da página de login
 
 $("#formlogin").validate({
     rules: {
-        login: {
+        email: {
             required: true,
             email: true,
         },
@@ -66,34 +67,34 @@ $("#formlogin").validate({
 
 $("#formcadastro").validate({
     rules: {
-        nome: {
+        name: {
             required: true,
             minlength: 2,
         },
 
-        emailCadastro: {
+        email: {
             required: true,
             email: true,
         },
 
-        passCadastro: {
+        password: {
             required: true,
             minlength: 8,
         }
     },
 
     messages: {
-        nome: {
+        name: {
             required: "Preencha este campo.",
             minlength: jQuery.validator.format("este campo deve ter 2 ou mais caracteres."),
         },
 
-        emailCadastro:{
+        email:{
             required: "Preencha este campo.",
             email: "Preencha com um email válido."
         },
 
-        passCadastro: {
+        password: {
             required: "Preencha este campo.",
             minlength: jQuery.validator.format("este campo deve ter 8 ou mais caracteres."),
         },
