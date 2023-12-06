@@ -18,7 +18,7 @@ class LoginController extends Controller
             $request->session()->regenerate();
             return redirect()->intended('/admin/conteudo');
         } else {
-            return redirect()->back()->withErrors('Usuário ou senha inválidos');
+            return redirect()->back()->withErrors('Usuário ou senha inválidos.');
         }
     }
 

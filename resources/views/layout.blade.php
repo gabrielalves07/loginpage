@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('titulo')</title>
 
-    <link rel="shortcut icon" href="../../resources/img/orbii.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../resources/img/orbii.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 

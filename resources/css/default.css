@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: arial, verdana, helvetica, sans-serif;
+    font-size: 14px;
+}
+
+:root{
+    --primary: rgb(139 139 139);
+    --secondary: #6A4EA6;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(233, 233, 233, 0.925);
+}
+
+p {
+    color: var(--primary);
+}
+
+/* Boas vindas - topo do formulário*/
+
+.welcome{
+    width: 100%;
+}
+
+.welcome h1{
+    color: #222226;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 22px;
+}
+
+.welcome>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.welcome>div>p{
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+    margin: 0;
+}
+
+.welcome>div>img{
+    width: 37px;
+}
+
+.metodos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ccgoogle, .ccface{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 49%;
+    height: 45px;
+    border: 1px rgb(202, 202, 202) solid;
+    border-radius: 3px;
+    padding: 5px 0;
+}
+
+.ccgoogle:hover, .ccface:hover{
+    text-decoration: none;
+    box-shadow: 0 0 1px var(--primary);
+}
+
+.ccgoogle p, .ccface p{
+    margin: 0;
+    color: rgb(139 139 139);
+}
+
+.ccgoogle>div>img, .ccface>div>img{
+    width: 25px;
+    margin-right: 3px;
+}
+
+/* imputs, lembrar senha e criar conta */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    max-width: 900px;
+    height: 88%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.13);
+    padding: 55px 50px 30px 50px;
+}
+
+form{
+    width: 100%;
+}
+
+div.section>.campologin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+form>button.btn-purple{
+    background-color: var(--secondary);
+    height: 40px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+form>button.btn-purple:hover{
+    background-color: #6242a7;
+    transition-duration: 0.3s;
+}
+
+.email, .pass, .nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px rgb(202, 202, 202) solid;
+    border-radius: 3px;
+    height: 40px;
+}
+
+.email input:focus + div{
+    color: var(--secondary);
+}
+
+.iconemail, .iconpass, .iconnome{
+    display: flex;
+    align-items: center;
+    padding: 7px 0 7px 14px;
+}
+
+.iconemail>i, .iconpass>i, .iconnome>i{
+    font-size: 19px;
+    color: rgb(134, 134, 134);
+}
+
+.form-control{
+    height: 35px;
+    border: none;
+}
+
+.form-control:focus {
+    border:none;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0 20px 5px;
+}
+
+.form-check-label{
+    color: var(--primary);
+}
+
+.esqueceusenha{
+    color: var(--secondary);
+}
+
+.esqueceusenha:hover{
+    text-decoration: none;
+    color: #4a2697;
+    transition-duration: 0.3s;
+}
+
+.ntconta{
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.ntconta>a{
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.ntconta>a:hover{
+    text-decoration: none;
+    color: #4a2697;
+    transition-duration: 0.3s;
+}
+
+/* ------------- campo cadastro ---------------*/
+
+div.section>.campocadastro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/* ------------ errors ------------- */
+
+label.error{
+    display: block;
+    margin-bottom: 14px;
+    font-size: 11px;
+    color: rgb(255, 54, 54);
+}

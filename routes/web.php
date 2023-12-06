@@ -5,7 +5,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ConteudoController;
 use App\Http\Controllers\UserController;
 
-Route::view('/', 'main')->name('login.form')->middleware('guest');
+Route::view('/login', 'login')->name('login.form')->middleware('guest');
+Route::view('/register', 'cadastro')->name('register.form')->middleware('guest');
 
 Route::resource('users', UserController::class);
 
