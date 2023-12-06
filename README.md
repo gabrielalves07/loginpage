@@ -53,7 +53,7 @@ Navegue até a pasta do projeto via terminal e execute o comanto "php artisan mi
 
 ## Abrindo o projeto no navegador
 
-Na sua URL digite: "http://localhost/loginpage/public/"
+Na sua URL digite: "http://localhost/loginpage/public/login"
 
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
