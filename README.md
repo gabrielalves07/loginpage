@@ -21,9 +21,23 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Download do Repositório
+## Composer e Nodejs com Npm
+
+Tenha o Composer e Nodejs instalados pra rodar o projeto corretamente. Essas ferramentas são responsáveis por gerenciar os pacotes necessários para o bom funcionamento da aplicação.
+
+## Fazer download do Repositório ou Clonar
 
 Após finalizar o download, encaminhe o projeto até a pasta "htdocs".
+
+## Dotenv
+
+O arquivo ".env.exemple" já está configurado como deve, apenas altere a extensão do arquivo.
+
+## Instalando as dependencias do projeto
+
+Navegue até a pasta raiz do projeto via terminal e execute o comando: "composer install".
+Apos finalizar execute também o comando: "npm i".
+E por fim: "npm run dev".
 
 ## Criação do banco de dados
 
