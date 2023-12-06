@@ -35,7 +35,7 @@ Após finalizar o download, encaminhe o projeto até a pasta "htdocs".
 
 ## Dotenv
 
-O arquivo ".env.exemple" já está configurado como deve, apenas altere a extensão do arquivo.
+O arquivo ".env.example" já está configurado como deve, apenas altere a extensão do arquivo.
 
 ## Instalando as dependencias do projeto
 
