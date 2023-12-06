@@ -25,9 +25,13 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 Tenha o Composer e Nodejs instalados pra rodar o projeto corretamente. Essas ferramentas são responsáveis por gerenciar os pacotes necessários para o bom funcionamento da aplicação.
 
+## Xampp
+
+Faça download do xampp com o servidor apache e phpMyAdmin (As outras opções podem ser desabilitadas)
+
 ## Fazer download do Repositório ou Clonar
 
-Após finalizar o download, encaminhe o projeto até a pasta "htdocs".
+Após finalizar o download, encaminhe o projeto até a pasta "htdocs". 
 
 ## Dotenv
 
