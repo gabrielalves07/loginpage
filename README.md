@@ -21,43 +21,40 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Composer e Nodejs com Npm
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Tenha o Composer e Nodejs instalados pra rodar o projeto corretamente. Essas ferramentas são responsáveis por gerenciar os pacotes necessários para o bom funcionamento da aplicação.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Xampp
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Faça download do xampp com o servidor apache e phpMyAdmin (As outras opções podem ser desabilitadas)
 
-## Laravel Sponsors
+## Fazer download do Repositório ou Clonar
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Após finalizar o download, encaminhe o projeto até a pasta "htdocs". 
 
-### Premium Partners
+## Dotenv
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+O arquivo ".env.example" já está configurado como deve, apenas altere a extensão do arquivo.
 
-## Contributing
+## Instalando as dependencias do projeto
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Navegue até a pasta raiz do projeto via terminal e execute o comando: "composer install".
+Apos finalizar execute também o comando: "npm i".
+E por fim: "npm run dev".
 
-## Code of Conduct
+## Criação do banco de dados
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Abra o phpMyAdmin do xampp e crie um novo banco de dados com o nome "loginpage" e Collation "utf8mb4_unicode_ci"
 
-## Security Vulnerabilities
+## Rodando as migrations
+
+Navegue até a pasta do projeto via terminal e execute o comanto "php artisan migrate"
+
+## Abrindo o projeto no navegador
+
+Na sua URL digite: "http://localhost/loginpage/public/"
+
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
