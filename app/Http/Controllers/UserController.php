@@ -35,7 +35,7 @@ class UserController extends Controller
             'email' => ['required', 'email', 'unique:users,email', 'regex:/^.+@[^\.].*\.[a-z]{2,}$/i'],
         ], [
             'email.required' => 'O campo email é obrigatório.',
-            'email.email' => 'Por favor, insira um endereço de email válido.',
+            'email.email' => 'Insira um endereço de email válido.',
             'email.unique' => 'Este email já está sendo utilizado.',
         ]);
 

@@ -1,3 +1,0 @@
-$(function() {
-    $('.toast').toast('show');
-});
